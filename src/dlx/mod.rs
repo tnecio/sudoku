@@ -303,6 +303,7 @@ impl DLMatrix {
         res
     }
 
+    #[allow(dead_code)] // useful for debugging
     pub fn print(&self) {
         let root_ptr = self.root_ptr();
         let mut columns = HashMap::new();
